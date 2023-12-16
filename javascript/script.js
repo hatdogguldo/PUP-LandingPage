@@ -72,3 +72,13 @@ function redirectToSection(sectionId) {
   // You can also add additional logic here for further customization or redirection
 }
 
+  window.addEventListener('scroll', function() {
+        var header = document.querySelector('.header');
+        if (window.scrollY > 80) {
+          header.classList.add('fixed-header');
+        } else {
+          header.classList.remove('fixed-header');
+        }
+      });
+    
+
